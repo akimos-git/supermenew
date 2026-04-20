@@ -6,7 +6,7 @@
 <head>
   <meta charset="utf-8" />
   <link href="https://cdn.prod.website-files.com" rel="preconnect" crossorigin="anonymous" />
-  <title>Superme - Webflow HTML website template</title>
+  <title>Super me! - Talent Labs</title>
   <meta
     content="Superme is a creative agency crafting bold brands, immersive digital experiences and strategic design to help modern businesses grow with impact today."
     name="description" />
@@ -31,6 +31,7 @@
   <link href="https://cdn.prod.website-files.com/691d92c72b801c04cbc08bec/css/vertora.webflow.shared.2a6d562b8.css"
     rel="stylesheet" type="text/css" integrity="sha384-Km1WK4h786wseaBo5xyI+Huc6PgcnhFWeeLoZVl7NDNI7MTi8Kea8nbWUWD2CeOz"
     crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     .floating-popup,
     .wand-tooltip,
@@ -38,8 +39,54 @@
     .w-webflow-badge {
       display: none !important;
     }
+	
+	
   </style>
   <style>
+  .rt-card-image-wrap.rt-radius-small.rt-card-image-wrap-v4 {
+  background-image: url("");
+}
+.rt-logo-item {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.rt-logo-inner-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Default state */
+.rt-icon {
+  font-size: 32px;
+  color: #B14FA4;;
+  transition: 0.3s;
+}
+
+.rt-text-style-h4 {
+  color: #000;
+  transition: 0.3s;
+}
+
+/* 🔥 Hover state */
+.rt-logo-item:hover {
+  background: #000;
+  transform: translateY(-6px);
+}
+
+.rt-logo-item:hover .rt-icon {
+  color: #fff;
+}
+
+.rt-logo-item:hover .rt-text-style-h4 {
+  color: #fff;
+}
     @media (min-width: 992px) {
       html.w-mod-js:not(.w-mod-ix) [data-w-id="1175e747-81a1-855b-8691-32642c90de80"] {
         height: 0%;
@@ -1064,7 +1111,7 @@
                       </div>
                       <div class="w-layout-vflex rt-hamburger-menu-top-wrap">
                         <div class="w-layout-hflex rt-overflow-hidden">
-                          <a href="/" aria-current="page"
+                          <a href="" aria-current="page"
                             class="rt-hamburger-menu-link-block rt-overflow-hidden w-inline-block w--current">
                             <div class="rt-text-style-h2 rt-hamburger-menu-link rt-active">
                               Home<br />
@@ -1073,7 +1120,7 @@
                           </a>
                         </div>
                         <div class="w-layout-hflex rt-overflow-hidden">
-                          <a data-w-id="92e910e9-8221-79b2-c2d9-aff407ebccf4" href="/about"
+                          <a data-w-id="92e910e9-8221-79b2-c2d9-aff407ebccf4" href="#about"
                             class="rt-hamburger-menu-link-block rt-overflow-hidden w-inline-block">
                             <div class="rt-text-style-h2 rt-hamburger-menu-link rt-inactive">
                               About
@@ -1082,16 +1129,7 @@
                           </a>
                         </div>
                         <div class="w-layout-hflex rt-overflow-hidden">
-                          <a data-w-id="92e910e9-8221-79b2-c2d9-aff407ebccf9" href="/service"
-                            class="rt-hamburger-menu-link-block rt-overflow-hidden w-inline-block">
-                            <div class="rt-text-style-h2 rt-hamburger-menu-link rt-inactive">
-                              Service
-                            </div>
-                            <div class="rt-menu-bottom-line rt-inactive"></div>
-                          </a>
-                        </div>
-                        <div class="w-layout-hflex rt-overflow-hidden">
-                          <a data-w-id="92e910e9-8221-79b2-c2d9-aff407ebccfe" href="/portfolio-one"
+                          <a data-w-id="92e910e9-8221-79b2-c2d9-aff407ebccfe" href="#portfolio"
                             class="rt-hamburger-menu-link-block rt-overflow-hidden w-inline-block">
                             <div class="rt-text-style-h2 rt-hamburger-menu-link rt-inactive">
                               Portfolio
@@ -1100,16 +1138,7 @@
                           </a>
                         </div>
                         <div class="w-layout-hflex rt-overflow-hidden">
-                          <a data-w-id="92e910e9-8221-79b2-c2d9-aff407ebcd03" href="/blog-one"
-                            class="rt-hamburger-menu-link-block rt-overflow-hidden w-inline-block">
-                            <div class="rt-text-style-h2 rt-hamburger-menu-link rt-inactive">
-                              Blog
-                            </div>
-                            <div class="rt-menu-bottom-line rt-inactive"></div>
-                          </a>
-                        </div>
-                        <div class="w-layout-hflex rt-overflow-hidden">
-                          <a data-w-id="92e910e9-8221-79b2-c2d9-aff407ebcd08" href="/contact-one"
+                          <a data-w-id="92e910e9-8221-79b2-c2d9-aff407ebcd08" href="https://api.whatsapp.com/send?phone=+919778250828"
                             class="rt-hamburger-menu-link-block rt-overflow-hidden w-inline-block">
                             <div class="rt-text-style-h2 rt-hamburger-menu-link rt-inactive">
                               Contact
@@ -1122,25 +1151,25 @@
                         <div>
                           <div class="w-layout-hflex rt-menu-social-links">
                             <div class="rt-overflow-hidden">
-                              <a href="https://www.facebook.com/" target="_blank"
+                              <a href="#" target="_blank"
                                 class="rt-social-link w-inline-block"><img loading="lazy"
                                   src="https://cdn.prod.website-files.com/691d92c72b801c04cbc08bec/693f99f679f56fb638cfd9a7_vertora-social-link-four.svg"
                                   alt="Superme-social-link-four" /></a>
                             </div>
                             <div class="rt-overflow-hidden">
-                              <a href="https://www.linkedin.com" target="_blank"
+                              <a href="https://www.linkedin.com/company/pediaverse/" target="_blank"
                                 class="rt-social-link w-inline-block"><img loading="lazy"
                                   src="https://cdn.prod.website-files.com/691d92c72b801c04cbc08bec/693f99f64727d093a17a4908_vertora-social-link-three.svg"
                                   alt="Superme-social-link-three" /></a>
                             </div>
                             <div class="rt-overflow-hidden">
-                              <a href="https://www.instagram.com/" class="rt-social-link w-inline-block"><img
+                              <a href="https://www.instagram.com/superme.club?igsh=MXJzdmxhbm0wcWJ2cg==" class="rt-social-link w-inline-block"><img
                                   loading="lazy"
                                   src="https://cdn.prod.website-files.com/691d92c72b801c04cbc08bec/693f99f62b79ce794e33e0ad_vertora-social-link-two.svg"
                                   alt="Superme-social-link-two" /></a>
                             </div>
                             <div class="rt-overflow-hidden">
-                              <a href="https://x.com/" target="_blank" class="rt-social-link w-inline-block"><img
+                              <a href="#" target="_blank" class="rt-social-link w-inline-block"><img
                                   loading="lazy"
                                   src="https://cdn.prod.website-files.com/691d92c72b801c04cbc08bec/693f99f648d11b64d345ef54_vertora-social-link-one.svg"
                                   alt="Superme-social-link-one" /></a>
@@ -1179,113 +1208,7 @@
           <div class="w-layout-blockcontainer rt-container-large w-container">
             <div class="rt-navigation-outer-wrap">
               <div class="w-layout-hflex rt-nav-logo-box">
-                <a href="/" aria-current="page" class="rt-nav-logo-inner-box w-inline-block w--current"><img
-                    alt="Super Me Logo" src="superme-logo.png" loading="lazy" class="rt-nav-logo"
-                    style="height: auto; max-height: 48px; object-fit: contain;" /></a>
-              </div>
-              <div class="w-layout-hflex rt-nav-menu-button-wrapper">
-                <div class="w-layout-hflex rt-nav-all-link-wrapper">
-                  <a href="/" aria-current="page" class="rt-menu-link w-inline-block w--current">
-                    <div class="rt-menu-text rt-text-color-white">
-                      Home
-                    </div>
-                  </a><a href="/about" class="rt-menu-link w-inline-block">
-                    <div class="rt-menu-text rt-text-color-white">About</div>
-                  </a>
-                  <div data-delay="200" data-hover="true" data-w-id="92e910e9-8221-79b2-c2d9-aff407ebcd2c"
-                    class="rt-nav-dropdown w-dropdown">
-                    <div class="rt-dropdown-toggle w-dropdown-toggle">
-                      <div class="rt-menu-text rt-text-color-white">
-                        Service
-                      </div>
-                      <div class="w-layout-hflex rt-nav-arrow-icon">
-                        <img width="10" height="6" alt=""
-                          src="https://cdn.prod.website-files.com/691d92c72b801c04cbc08bec/693e98aeb2903bec1d672e3a_axtira-about-three-image.svg"
-                          loading="lazy" class="rt-navbar-arrow rt-invert" />
-                      </div>
-                    </div>
-                    <nav class="rt-nav-dropdown-list rt-radius-small w-dropdown-list">
-                      <a href="/service" class="rt-nav-link-wrapper w-inline-block">
-                        <div class="rt-dropdown-link">Service</div>
-                      </a><a href="https://vertora.webflow.io/service-detail/3d-design"
-                        class="rt-nav-link-wrapper w-inline-block">
-                        <div class="rt-dropdown-link">Service details</div>
-                      </a>
-                    </nav>
-                  </div>
-                  <div data-delay="200" data-hover="true" data-w-id="92e910e9-8221-79b2-c2d9-aff407ebcd39"
-                    class="rt-nav-dropdown w-dropdown">
-                    <div class="rt-dropdown-toggle w-dropdown-toggle">
-                      <div class="rt-menu-text rt-text-color-white">Blog</div>
-                      <div class="w-layout-hflex rt-nav-arrow-icon">
-                        <img width="10" height="6" alt=""
-                          src="https://cdn.prod.website-files.com/691d92c72b801c04cbc08bec/693e98aeb2903bec1d672e3a_axtira-about-three-image.svg"
-                          loading="lazy" class="rt-navbar-arrow rt-invert" />
-                      </div>
-                    </div>
-                    <nav class="rt-nav-dropdown-list rt-radius-small w-dropdown-list">
-                      <a href="/blog-one" class="rt-nav-link-wrapper w-inline-block">
-                        <div class="rt-dropdown-link">Blog one</div>
-                      </a><a href="/blog-two" class="rt-nav-link-wrapper w-inline-block">
-                        <div class="rt-dropdown-link">Blog two</div>
-                      </a><a href="/blog-three" class="rt-nav-link-wrapper w-inline-block">
-                        <div class="rt-dropdown-link">Blog three</div>
-                      </a><a href="https://vertora.webflow.io/blog-post/how-to-build-an-e-commerce-quickly-with-webflow"
-                        class="rt-nav-link-wrapper w-inline-block">
-                        <div class="rt-dropdown-link">Blog posts</div>
-                      </a>
-                    </nav>
-                  </div>
-                  <div data-delay="200" data-hover="true" data-w-id="92e910e9-8221-79b2-c2d9-aff407ebcd4c"
-                    class="rt-nav-dropdown w-dropdown">
-                    <div class="rt-dropdown-toggle w-dropdown-toggle">
-                      <div class="rt-menu-text rt-text-color-white">
-                        Portfolio
-                      </div>
-                      <div class="w-layout-hflex rt-nav-arrow-icon">
-                        <img width="10" height="6" alt=""
-                          src="https://cdn.prod.website-files.com/691d92c72b801c04cbc08bec/693e98aeb2903bec1d672e3a_axtira-about-three-image.svg"
-                          loading="lazy" class="rt-navbar-arrow rt-invert" />
-                      </div>
-                    </div>
-                    <nav class="rt-nav-dropdown-list rt-radius-small w-dropdown-list">
-                      <a href="/portfolio-one" class="rt-nav-link-wrapper w-inline-block">
-                        <div class="rt-dropdown-link">Portfolio one</div>
-                      </a><a href="/portfolio-two" class="rt-nav-link-wrapper w-inline-block">
-                        <div class="rt-dropdown-link">Portfolio two</div>
-                      </a><a href="/portfolio-three" class="rt-nav-link-wrapper w-inline-block">
-                        <div class="rt-dropdown-link">
-                          Portfolio three
-                        </div>
-                      </a><a href="https://vertora.webflow.io/portfolio-detail/movtreh"
-                        class="rt-nav-link-wrapper w-inline-block">
-                        <div class="rt-dropdown-link">Portfolio details</div>
-                      </a>
-                    </nav>
-                  </div>
-                  <div data-delay="200" data-hover="true" data-w-id="92e910e9-8221-79b2-c2d9-aff407ebcd5f"
-                    class="rt-nav-dropdown w-dropdown">
-                    <div class="rt-dropdown-toggle w-dropdown-toggle">
-                      <div class="rt-menu-text rt-text-color-white">
-                        Contact
-                      </div>
-                      <div class="w-layout-hflex rt-nav-arrow-icon">
-                        <img width="10" height="6" alt=""
-                          src="https://cdn.prod.website-files.com/691d92c72b801c04cbc08bec/693e98aeb2903bec1d672e3a_axtira-about-three-image.svg"
-                          loading="lazy" class="rt-navbar-arrow rt-invert" />
-                      </div>
-                    </div>
-                    <nav class="rt-nav-dropdown-list rt-radius-small w-dropdown-list">
-                      <a href="/contact-one" class="rt-nav-link-wrapper w-inline-block">
-                        <div class="rt-dropdown-link">Contact one</div>
-                      </a><a href="/contact-two" class="rt-nav-link-wrapper w-inline-block">
-                        <div class="rt-dropdown-link">Contact two</div>
-                      </a><a href="/contact-three" class="rt-nav-link-wrapper w-inline-block">
-                        <div class="rt-dropdown-link">Contact three</div>
-                      </a>
-                    </nav>
-                  </div>
-                </div>
+                <a href="/" aria-current="page" class="rt-big-text-v1 rt-text-color-white rt-gap-small">Super me!</a>
               </div>
               <div id="w-node-_92e910e9-8221-79b2-c2d9-aff407ebcd6f-07ebcce1">
                 <div data-w-id="92e910e9-8221-79b2-c2d9-aff407ebcd70" class="w-layout-vflex rt-desktop-hamburger">
@@ -1331,12 +1254,6 @@
                     https://cdn.prod.website-files.com/691d92c72b801c04cbc08bec/694b9417a3c95891b75259ca_Vertora-hero-rotate-image-one-p-500.webp 500w,
                     https://cdn.prod.website-files.com/691d92c72b801c04cbc08bec/694b9417a3c95891b75259ca_Vertora-hero-rotate-image-one.webp       566w
                   " class="rt-hero-rotate-image rt-radius-small rt-third" /><img
-                src="https://cdn.prod.website-files.com/691d92c72b801c04cbc08bec/694b9417b53d212cfce3cba9_Vertora-hero-rotate-image-two.webp"
-                loading="lazy" data-w-id="d69c7c31-26be-f5b8-4424-46b5bf814e55" sizes="(max-width: 566px) 100vw, 566px"
-                alt="Superme-hero-rotate-image-two" srcset="
-                    https://cdn.prod.website-files.com/691d92c72b801c04cbc08bec/694b9417b53d212cfce3cba9_Vertora-hero-rotate-image-two-p-500.webp 500w,
-                    https://cdn.prod.website-files.com/691d92c72b801c04cbc08bec/694b9417b53d212cfce3cba9_Vertora-hero-rotate-image-two.webp       566w
-                  " class="rt-hero-rotate-image rt-radius-small rt-four" /><img
                 src="https://cdn.prod.website-files.com/691d92c72b801c04cbc08bec/694b9417448babe755363347_Vertora-hero-rotate-image-six.webp"
                 loading="lazy" data-w-id="b4d9ef76-96c9-5978-4624-c21a42f69ed1" sizes="(max-width: 566px) 100vw, 566px"
                 alt="Superme-hero-rotate-image-six" srcset="
@@ -1583,7 +1500,7 @@
     </div>
   </section>
   <main>
-    <section class="rt-logos-v1">
+    <section class="rt-logos-v1" id="portfolio">
       <div class="w-layout-blockcontainer rt-container w-container">
         <div class="w-layout-vflex rt-logo-wrapper">
           <div class="w-layout-hflex rt-logo-top-wrapper rt-gap-xl">
@@ -1617,332 +1534,71 @@
             </div>
           </div>
           <div class="w-layout-grid rt-logo-list">
-            <div data-w-id="e775d93c-e35d-660a-9002-2b031e119bc9" style="
-                  background-color: rgb(255, 255, 255);
-                  -webkit-transform: translate3d(0, 3.14rem, 0) scale3d(1, 1, 1)
-                    rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                  -moz-transform: translate3d(0, 3.14rem, 0) scale3d(1, 1, 1)
-                    rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                  -ms-transform: translate3d(0, 3.14rem, 0) scale3d(1, 1, 1)
-                    rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                  transform: translate3d(0, 3.14rem, 0) scale3d(1, 1, 1)
-                    rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                  opacity: 0;
-                  filter: blur(0.375rem);
-                " class="w-layout-vflex rt-logo-item rt-radius-medium rt-item-1">
-              <div class="w-layout-vflex rt-logo-inner-wrapper rt-overflow-hidden">
-                <img
-                  src="https://cdn.prod.website-files.com/691d92c72b801c04cbc08bec/6926eb448fc004952aca17f2_vertora-logo-one.svg"
-                  loading="lazy" width="121" height="24" alt="Superme-logo-one" style="
-                      -webkit-transform: translate3d(0, 0%, 0) scale3d(1, 1, 1)
-                        rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                      -moz-transform: translate3d(0, 0%, 0) scale3d(1, 1, 1)
-                        rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                      -ms-transform: translate3d(0, 0%, 0) scale3d(1, 1, 1)
-                        rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                      transform: translate3d(0, 0%, 0) scale3d(1, 1, 1)
-                        rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                    " class="rt-black-logo" /><img
-                  src="https://cdn.prod.website-files.com/691d92c72b801c04cbc08bec/6926ebba6be52dad8f152cb4_Group%201597885232.svg"
-                  loading="lazy" width="121" height="24" alt="Superme-logo-white-logo-eight" style="
-                      -webkit-transform: translate3d(0, 100%, 0)
-                        scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0)
-                        skew(0, 0);
-                      -moz-transform: translate3d(0, 100%, 0) scale3d(1, 1, 1)
-                        rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                      -ms-transform: translate3d(0, 100%, 0) scale3d(1, 1, 1)
-                        rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                      transform: translate3d(0, 100%, 0) scale3d(1, 1, 1)
-                        rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                    " class="rt-white-logo" />
-              </div>
-            </div>
-            <div data-w-id="543713b5-41be-4c20-35c7-6d88de5d248f" style="
-                  background-color: rgb(255, 255, 255);
-                  -webkit-transform: translate3d(0, 3.14rem, 0) scale3d(1, 1, 1)
-                    rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                  -moz-transform: translate3d(0, 3.14rem, 0) scale3d(1, 1, 1)
-                    rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                  -ms-transform: translate3d(0, 3.14rem, 0) scale3d(1, 1, 1)
-                    rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                  transform: translate3d(0, 3.14rem, 0) scale3d(1, 1, 1)
-                    rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                  opacity: 0;
-                  filter: blur(0.375rem);
-                " class="w-layout-vflex rt-logo-item rt-radius-medium rt-item-1">
-              <div class="w-layout-vflex rt-logo-inner-wrapper rt-overflow-hidden">
-                <img
-                  src="https://cdn.prod.website-files.com/691d92c72b801c04cbc08bec/6926eb449c977eef5051284f_vertora-logo-two.svg"
-                  loading="lazy" width="121" height="24" alt="Superme-logo-two" style="
-                      -webkit-transform: translate3d(0, 0%, 0) scale3d(1, 1, 1)
-                        rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                      -moz-transform: translate3d(0, 0%, 0) scale3d(1, 1, 1)
-                        rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                      -ms-transform: translate3d(0, 0%, 0) scale3d(1, 1, 1)
-                        rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                      transform: translate3d(0, 0%, 0) scale3d(1, 1, 1)
-                        rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                    " class="rt-black-logo" /><img
-                  src="https://cdn.prod.website-files.com/691d92c72b801c04cbc08bec/6926ebba2892e45b41f23763_Group%201597885231.svg"
-                  loading="lazy" width="121" height="24" alt="Superme-logo-white-logo-three" style="
-                      -webkit-transform: translate3d(0, 100%, 0)
-                        scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0)
-                        skew(0, 0);
-                      -moz-transform: translate3d(0, 100%, 0) scale3d(1, 1, 1)
-                        rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                      -ms-transform: translate3d(0, 100%, 0) scale3d(1, 1, 1)
-                        rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                      transform: translate3d(0, 100%, 0) scale3d(1, 1, 1)
-                        rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                    " class="rt-white-logo" />
-              </div>
-            </div>
-            <div data-w-id="30f8cc07-c427-5bfb-8504-e993ea89c61c" style="
-                  background-color: rgb(255, 255, 255);
-                  -webkit-transform: translate3d(0, 3.14rem, 0) scale3d(1, 1, 1)
-                    rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                  -moz-transform: translate3d(0, 3.14rem, 0) scale3d(1, 1, 1)
-                    rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                  -ms-transform: translate3d(0, 3.14rem, 0) scale3d(1, 1, 1)
-                    rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                  transform: translate3d(0, 3.14rem, 0) scale3d(1, 1, 1)
-                    rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                  opacity: 0;
-                  filter: blur(0.375rem);
-                " class="w-layout-vflex rt-logo-item rt-radius-medium rt-item-1">
-              <div class="w-layout-vflex rt-logo-inner-wrapper rt-overflow-hidden">
-                <img
-                  src="https://cdn.prod.website-files.com/691d92c72b801c04cbc08bec/6926eb443d96d7354dd27bb5_vertora-logo-three.svg"
-                  loading="lazy" width="121" height="24" alt="Superme-logo-three" style="
-                      -webkit-transform: translate3d(0, 0%, 0) scale3d(1, 1, 1)
-                        rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                      -moz-transform: translate3d(0, 0%, 0) scale3d(1, 1, 1)
-                        rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                      -ms-transform: translate3d(0, 0%, 0) scale3d(1, 1, 1)
-                        rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                      transform: translate3d(0, 0%, 0) scale3d(1, 1, 1)
-                        rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                    " class="rt-black-logo" /><img
-                  src="https://cdn.prod.website-files.com/691d92c72b801c04cbc08bec/6926ebbae36cab0af7f260b7_Group%201597885230.svg"
-                  loading="lazy" width="121" height="24" alt="Superme-logo-white-logo-four" style="
-                      -webkit-transform: translate3d(0, 100%, 0)
-                        scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0)
-                        skew(0, 0);
-                      -moz-transform: translate3d(0, 100%, 0) scale3d(1, 1, 1)
-                        rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                      -ms-transform: translate3d(0, 100%, 0) scale3d(1, 1, 1)
-                        rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                      transform: translate3d(0, 100%, 0) scale3d(1, 1, 1)
-                        rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                    " class="rt-white-logo" />
-              </div>
-            </div>
-            <div data-w-id="6cf9efc5-88fb-f6e1-f418-b3a2ffcf9c61" style="
-                  background-color: rgb(255, 255, 255);
-                  -webkit-transform: translate3d(0, 3.14rem, 0) scale3d(1, 1, 1)
-                    rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                  -moz-transform: translate3d(0, 3.14rem, 0) scale3d(1, 1, 1)
-                    rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                  -ms-transform: translate3d(0, 3.14rem, 0) scale3d(1, 1, 1)
-                    rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                  transform: translate3d(0, 3.14rem, 0) scale3d(1, 1, 1)
-                    rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                  opacity: 0;
-                  filter: blur(0.375rem);
-                " class="w-layout-vflex rt-logo-item rt-radius-medium rt-item-1">
-              <div class="w-layout-vflex rt-logo-inner-wrapper rt-overflow-hidden">
-                <img
-                  src="https://cdn.prod.website-files.com/691d92c72b801c04cbc08bec/6926eb443c8e1731c49fcf92_vertora-logo-four.svg"
-                  loading="lazy" width="Auto" height="Auto" alt="Superme-logo-four" style="
-                      -webkit-transform: translate3d(0, 0%, 0) scale3d(1, 1, 1)
-                        rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                      -moz-transform: translate3d(0, 0%, 0) scale3d(1, 1, 1)
-                        rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                      -ms-transform: translate3d(0, 0%, 0) scale3d(1, 1, 1)
-                        rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                      transform: translate3d(0, 0%, 0) scale3d(1, 1, 1)
-                        rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                    " class="rt-black-logo" /><img
-                  src="https://cdn.prod.website-files.com/691d92c72b801c04cbc08bec/6926ebba6394c2234a85db42_496e953c3958d74a9952e7be87d0e0ae_Group%201597885229.webp"
-                  loading="lazy" width="121" height="24" alt="Superme-logo-white-logo-seven" style="
-                      -webkit-transform: translate3d(0, 100%, 0)
-                        scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0)
-                        skew(0, 0);
-                      -moz-transform: translate3d(0, 100%, 0) scale3d(1, 1, 1)
-                        rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                      -ms-transform: translate3d(0, 100%, 0) scale3d(1, 1, 1)
-                        rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                      transform: translate3d(0, 100%, 0) scale3d(1, 1, 1)
-                        rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                    " class="rt-white-logo" />
-              </div>
-            </div>
-            <div data-w-id="e16e2cde-03a0-0945-4e1c-489594c4ddfc" style="
-                  background-color: rgb(255, 255, 255);
-                  -webkit-transform: translate3d(0, 3.14rem, 0) scale3d(1, 1, 1)
-                    rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                  -moz-transform: translate3d(0, 3.14rem, 0) scale3d(1, 1, 1)
-                    rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                  -ms-transform: translate3d(0, 3.14rem, 0) scale3d(1, 1, 1)
-                    rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                  transform: translate3d(0, 3.14rem, 0) scale3d(1, 1, 1)
-                    rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                  opacity: 0;
-                  filter: blur(0.375rem);
-                " class="w-layout-vflex rt-logo-item rt-radius-medium">
-              <div class="w-layout-vflex rt-logo-inner-wrapper rt-overflow-hidden">
-                <img
-                  src="https://cdn.prod.website-files.com/691d92c72b801c04cbc08bec/6926eb44ff82d241af051a0e_vertora-logo-five.svg"
-                  loading="lazy" width="121" height="24" alt="Superme-logo-five" style="
-                      -webkit-transform: translate3d(0, 0%, 0) scale3d(1, 1, 1)
-                        rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                      -moz-transform: translate3d(0, 0%, 0) scale3d(1, 1, 1)
-                        rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                      -ms-transform: translate3d(0, 0%, 0) scale3d(1, 1, 1)
-                        rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                      transform: translate3d(0, 0%, 0) scale3d(1, 1, 1)
-                        rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                    " class="rt-black-logo" /><img
-                  src="https://cdn.prod.website-files.com/691d92c72b801c04cbc08bec/6926ebba6394c2234a85db3d_Group%201597885233.svg"
-                  loading="lazy" width="121" height="24" alt="superme-logo-white-logo-five" style="
-                      -webkit-transform: translate3d(0, 100%, 0)
-                        scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0)
-                        skew(0, 0);
-                      -moz-transform: translate3d(0, 100%, 0) scale3d(1, 1, 1)
-                        rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                      -ms-transform: translate3d(0, 100%, 0) scale3d(1, 1, 1)
-                        rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                      transform: translate3d(0, 100%, 0) scale3d(1, 1, 1)
-                        rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                    " class="rt-white-logo" />
-              </div>
-            </div>
-            <div data-w-id="5cab4fc3-e8f1-16e9-6e4f-7bf5e654d526" style="
-                  background-color: rgb(255, 255, 255);
-                  -webkit-transform: translate3d(0, 3.14rem, 0) scale3d(1, 1, 1)
-                    rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                  -moz-transform: translate3d(0, 3.14rem, 0) scale3d(1, 1, 1)
-                    rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                  -ms-transform: translate3d(0, 3.14rem, 0) scale3d(1, 1, 1)
-                    rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                  transform: translate3d(0, 3.14rem, 0) scale3d(1, 1, 1)
-                    rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                  opacity: 0;
-                  filter: blur(0.375rem);
-                " class="w-layout-vflex rt-logo-item rt-radius-medium">
-              <div class="w-layout-vflex rt-logo-inner-wrapper rt-overflow-hidden">
-                <img
-                  src="https://cdn.prod.website-files.com/691d92c72b801c04cbc08bec/6926eb442ffa4c2debbced85_vertora-logo-six.svg"
-                  loading="lazy" width="121" height="24" alt="Superme-logo-six" style="
-                      -webkit-transform: translate3d(0, 0%, 0) scale3d(1, 1, 1)
-                        rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                      -moz-transform: translate3d(0, 0%, 0) scale3d(1, 1, 1)
-                        rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                      -ms-transform: translate3d(0, 0%, 0) scale3d(1, 1, 1)
-                        rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                      transform: translate3d(0, 0%, 0) scale3d(1, 1, 1)
-                        rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                    " class="rt-black-logo" /><img
-                  src="https://cdn.prod.website-files.com/691d92c72b801c04cbc08bec/6926ebba523cf6d4fa0cb121_Group%201597885234.svg"
-                  loading="lazy" width="121" height="24" alt="Superme-logo-white-logo-two" style="
-                      -webkit-transform: translate3d(0, 100%, 0)
-                        scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0)
-                        skew(0, 0);
-                      -moz-transform: translate3d(0, 100%, 0) scale3d(1, 1, 1)
-                        rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                      -ms-transform: translate3d(0, 100%, 0) scale3d(1, 1, 1)
-                        rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                      transform: translate3d(0, 100%, 0) scale3d(1, 1, 1)
-                        rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                    " class="rt-white-logo" />
-              </div>
-            </div>
-            <div data-w-id="c40c974c-78ed-7fa2-a185-39f7563ac0de" style="
-                  background-color: rgb(255, 255, 255);
-                  -webkit-transform: translate3d(0, 3.14rem, 0) scale3d(1, 1, 1)
-                    rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                  -moz-transform: translate3d(0, 3.14rem, 0) scale3d(1, 1, 1)
-                    rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                  -ms-transform: translate3d(0, 3.14rem, 0) scale3d(1, 1, 1)
-                    rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                  transform: translate3d(0, 3.14rem, 0) scale3d(1, 1, 1)
-                    rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                  opacity: 0;
-                  filter: blur(0.375rem);
-                " class="w-layout-vflex rt-logo-item rt-radius-medium">
-              <div class="w-layout-vflex rt-logo-inner-wrapper rt-overflow-hidden">
-                <img
-                  src="https://cdn.prod.website-files.com/691d92c72b801c04cbc08bec/6926eb44eac37615eb8a30b6_vertora-logo-seven.svg"
-                  loading="lazy" width="121" height="24" alt="Superme-logo-seven" style="
-                      -webkit-transform: translate3d(0, 0%, 0) scale3d(1, 1, 1)
-                        rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                      -moz-transform: translate3d(0, 0%, 0) scale3d(1, 1, 1)
-                        rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                      -ms-transform: translate3d(0, 0%, 0) scale3d(1, 1, 1)
-                        rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                      transform: translate3d(0, 0%, 0) scale3d(1, 1, 1)
-                        rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                    " class="rt-black-logo" /><img
-                  src="https://cdn.prod.website-files.com/691d92c72b801c04cbc08bec/6926ebbaad2e760039fcdd6d_Group%201597885235.svg"
-                  loading="lazy" width="121" height="24" alt="superme-logo-white-logo-six" style="
-                      -webkit-transform: translate3d(0, 100%, 0)
-                        scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0)
-                        skew(0, 0);
-                      -moz-transform: translate3d(0, 100%, 0) scale3d(1, 1, 1)
-                        rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                      -ms-transform: translate3d(0, 100%, 0) scale3d(1, 1, 1)
-                        rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                      transform: translate3d(0, 100%, 0) scale3d(1, 1, 1)
-                        rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                    " class="rt-white-logo" />
-              </div>
-            </div>
-            <div data-w-id="8dd68d07-2a41-79fc-5ded-91539b055315" style="
-                  background-color: rgb(255, 255, 255);
-                  -webkit-transform: translate3d(0, 3.14rem, 0) scale3d(1, 1, 1)
-                    rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                  -moz-transform: translate3d(0, 3.14rem, 0) scale3d(1, 1, 1)
-                    rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                  -ms-transform: translate3d(0, 3.14rem, 0) scale3d(1, 1, 1)
-                    rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                  transform: translate3d(0, 3.14rem, 0) scale3d(1, 1, 1)
-                    rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                  opacity: 0;
-                  filter: blur(0.375rem);
-                " class="w-layout-vflex rt-logo-item rt-radius-medium">
-              <div class="w-layout-vflex rt-logo-inner-wrapper rt-overflow-hidden">
-                <img
-                  src="https://cdn.prod.website-files.com/691d92c72b801c04cbc08bec/6926eb447105177068658140_vertora-logo-eight.svg"
-                  loading="lazy" width="121" height="24" alt="Superme-logo-eight" style="
-                      -webkit-transform: translate3d(0, 0%, 0) scale3d(1, 1, 1)
-                        rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                      -moz-transform: translate3d(0, 0%, 0) scale3d(1, 1, 1)
-                        rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                      -ms-transform: translate3d(0, 0%, 0) scale3d(1, 1, 1)
-                        rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                      transform: translate3d(0, 0%, 0) scale3d(1, 1, 1)
-                        rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                    " class="rt-black-logo" /><img
-                  src="https://cdn.prod.website-files.com/691d92c72b801c04cbc08bec/6926ebbae10ae4b5f28d8644_Group%201597885236.svg"
-                  loading="lazy" width="121" height="24" alt="Superme-logo-white-logo-one" style="
-                      -webkit-transform: translate3d(0, 100%, 0)
-                        scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0)
-                        skew(0, 0);
-                      -moz-transform: translate3d(0, 100%, 0) scale3d(1, 1, 1)
-                        rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                      -ms-transform: translate3d(0, 100%, 0) scale3d(1, 1, 1)
-                        rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                      transform: translate3d(0, 100%, 0) scale3d(1, 1, 1)
-                        rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                    " class="rt-white-logo" />
-              </div>
+
+  <div class="rt-logo-item">
+    <div class="rt-logo-inner-wrapper">
+      <i class="fas fa-user-astronaut rt-icon"></i>
+      <div class="rt-text-style-h4">Creator Economy</div>
+    </div>
+  </div>
+
+  <div class="rt-logo-item">
+    <div class="rt-logo-inner-wrapper">
+      <i class="fas fa-futbol rt-icon"></i>
+      <div class="rt-text-style-h4">Sports economy</div>
+    </div>
+  </div>
+
+  <div class="rt-logo-item">
+    <div class="rt-logo-inner-wrapper">
+      <i class="fas fa-store rt-icon"></i>
+      <div class="rt-text-style-h4">Organised retail</div>
+    </div>
+  </div>
+
+  <div class="rt-logo-item">
+    <div class="rt-logo-inner-wrapper">
+      <i class="fas fa-leaf rt-icon"></i>
+      <div class="rt-text-style-h4">Clean tech & renewables</div>
+    </div>
+  </div>
+
+  <div class="rt-logo-item">
+    <div class="rt-logo-inner-wrapper">
+      <i class="fas fa-hotel rt-icon"></i>
+      <div class="rt-text-style-h4">Hospitality</div>
+    </div>
+  </div>
+
+  <div class="rt-logo-item">
+    <div class="rt-logo-inner-wrapper">
+      <i class="fas fa-credit-card rt-icon"></i>
+      <div class="rt-text-style-h4">Fintech</div>
+    </div>
+  </div>
+
+  <div class="rt-logo-item">
+    <div class="rt-logo-inner-wrapper">
+      <i class="fas fa-car rt-icon"></i>
+      <div class="rt-text-style-h4">Mobility</div>
+    </div>
+  </div>
+
+  <div class="rt-logo-item">
+    <div class="rt-logo-inner-wrapper">
+      <i class="fas fa-graduation-cap rt-icon"></i>
+      <div class="rt-text-style-h4">Edtech</div>
+    </div>
+  </div>
+
+</div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="rt-about-v1 rt-overflow-hidden">
-      <div class="w-layout-blockcontainer rt-container w-container">
+    <section class="rt-about-v1 rt-overflow-hidden" id="about">
+      <div class="w-layout-blockcontainer rt-container w-container" >
         <div data-w-id="e95f0d2b-1043-7eec-1182-a2b10009f2ef" class="w-layout-hflex rt-about-v1-main">
           <div class="w-layout-vflex rt-about-v1-left-wrapper">
             <div data-w-id="9a1478ce-5d44-a9ab-6122-29ea044c26b1" style="
@@ -2456,7 +2112,7 @@
                     filter: blur(0.375rem);
                   " class="rt-review-col-1">
                 <div class="rt-text-style-h4">
-                  Driving growth with strategies tailored for success
+                 Experiential Rails for the New Economy.
                 </div>
               </div>
               <div id="w-node-b5270133-8e03-196c-1af2-73e4fbba6aa9-a7c4dce9"
@@ -2504,7 +2160,7 @@
                           transform: translate3d(0, 0%, 0) scale3d(1, 1, 1)
                             rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
                         " class="w-layout-vflex rt-counter-train">
-                      <div class="rt-big-text-v1">8</div>
+                      <div class="rt-big-text-v1">9</div>
                       <div class="rt-big-text-v1">1</div>
                       <div class="rt-big-text-v1">2</div>
                       <div class="rt-big-text-v1">3</div>
@@ -2523,7 +2179,7 @@
                           transform: translate3d(0, 0%, 0) scale3d(1, 1, 1)
                             rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
                         " class="w-layout-vflex rt-counter-train">
-                      <div class="rt-big-text-v1">0</div>
+                      <div class="rt-big-text-v1">9</div>
                       <div class="rt-big-text-v1">1</div>
                       <div class="rt-big-text-v1">2</div>
                       <div class="rt-big-text-v1">3</div>
@@ -2545,7 +2201,7 @@
                           transform: translate3d(0, 0%, 0) scale3d(1, 1, 1)
                             rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
                         " class="w-layout-vflex rt-counter-train">
-                      <div class="rt-big-text-v1">5</div>
+                      <div class="rt-big-text-v1">8</div>
                       <div class="rt-big-text-v1">1</div>
                       <div class="rt-big-text-v1">2</div>
                       <div class="rt-big-text-v1">3</div>
@@ -2560,7 +2216,9 @@
                   <div class="rt-big-text-v1">%</div>
                 </div>
                 <p class="rt-review-v1-short-description rt-gap-off">
-                  Analyze and monitor business reporting data
+                what is learned in our units is immediately
+converted into industrial output.
+
                 </p>
               </div>
               <div data-w-id="ce944332-f512-7466-faef-07bbf53ca768" style="
@@ -2649,7 +2307,7 @@
                           transform: translate3d(0, 0%, 0) scale3d(1, 1, 1)
                             rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
                         " class="w-layout-vflex rt-counter-train">
-                      <div class="rt-big-text-v1">5</div>
+                      <div class="rt-big-text-v1">9</div>
                       <div class="rt-big-text-v1">1</div>
                       <div class="rt-big-text-v1">2</div>
                       <div class="rt-big-text-v1">3</div>
@@ -2692,102 +2350,9 @@
                       filter: blur(0.375rem);
                     " class="w-layout-vflex rt-review-v1-list-card rt-radius-medium">
                   <div class="w-layout-hflex rt-card-top-wrapper rt-gap-medium">
-                    <div data-w-id="9cde1952-83ca-c74b-4d39-9cc8bee9824a"
-                      class="w-layout-hflex rt-counter-box-v1 rt-overflow-hidden">
-                      <div class="w-layout-vflex rt-counter-train-wrap">
-                        <div style="
-                              -webkit-transform: translate3d(0, 0%, 0)
-                                scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                rotateZ(0) skew(0, 0);
-                              -moz-transform: translate3d(0, 0%, 0)
-                                scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                rotateZ(0) skew(0, 0);
-                              -ms-transform: translate3d(0, 0%, 0)
-                                scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                rotateZ(0) skew(0, 0);
-                              transform: translate3d(0, 0%, 0) scale3d(1, 1, 1)
-                                rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                            " class="w-layout-vflex rt-counter-train">
-                          <div class="rt-big-text-v1">0</div>
-                          <div class="rt-big-text-v1">1</div>
-                          <div class="rt-big-text-v1">2</div>
-                          <div class="rt-big-text-v1">7</div>
-                          <div class="rt-big-text-v1">8</div>
-                        </div>
-                        <div style="
-                              -webkit-transform: translate3d(0, 0%, 0)
-                                scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                rotateZ(0) skew(0, 0);
-                              -moz-transform: translate3d(0, 0%, 0)
-                                scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                rotateZ(0) skew(0, 0);
-                              -ms-transform: translate3d(0, 0%, 0)
-                                scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                rotateZ(0) skew(0, 0);
-                              transform: translate3d(0, 0%, 0) scale3d(1, 1, 1)
-                                rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                            " class="w-layout-vflex rt-counter-train">
-                          <div class="rt-big-text-v1">9</div>
-                          <div class="rt-big-text-v1">1</div>
-                          <div class="rt-big-text-v1">2</div>
-                          <div class="rt-big-text-v1">3</div>
-                          <div class="rt-big-text-v1">4</div>
-                        </div>
-                      </div>
-                      <div class="w-layout-vflex rt-counter-train-wrap">
-                        <div style="
-                              -webkit-transform: translate3d(0, 0%, 0)
-                                scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                rotateZ(0) skew(0, 0);
-                              -moz-transform: translate3d(0, 0%, 0)
-                                scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                rotateZ(0) skew(0, 0);
-                              -ms-transform: translate3d(0, 0%, 0)
-                                scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                rotateZ(0) skew(0, 0);
-                              transform: translate3d(0, 0%, 0) scale3d(1, 1, 1)
-                                rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                            " class="w-layout-vflex rt-counter-train">
-                          <div class="rt-big-text-v1">0</div>
-                          <div class="rt-big-text-v1">1</div>
-                          <div class="rt-big-text-v1">2</div>
-                          <div class="rt-big-text-v1">3</div>
-                          <div class="rt-big-text-v1">4</div>
-                          <div class="rt-big-text-v1">5</div>
-                          <div class="rt-big-text-v1">6</div>
-                          <div class="rt-big-text-v1">2</div>
-                          <div class="rt-big-text-v1">3</div>
-                          <div class="rt-big-text-v1">4</div>
-                        </div>
-                        <div style="
-                              -webkit-transform: translate3d(0, 0%, 0)
-                                scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                rotateZ(0) skew(0, 0);
-                              -moz-transform: translate3d(0, 0%, 0)
-                                scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                rotateZ(0) skew(0, 0);
-                              -ms-transform: translate3d(0, 0%, 0)
-                                scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                rotateZ(0) skew(0, 0);
-                              transform: translate3d(0, 0%, 0) scale3d(1, 1, 1)
-                                rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                            " class="w-layout-vflex rt-counter-train">
-                          <div class="rt-big-text-v1">5</div>
-                          <div class="rt-big-text-v1">1</div>
-                          <div class="rt-big-text-v1">2</div>
-                          <div class="rt-big-text-v1">3</div>
-                          <div class="rt-big-text-v1">4</div>
-                          <div class="rt-big-text-v1">5</div>
-                          <div class="rt-big-text-v1">6</div>
-                          <div class="rt-big-text-v1">7</div>
-                          <div class="rt-big-text-v1">8</div>
-                          <div class="rt-big-text-v1">9</div>
-                        </div>
-                      </div>
-                      <div class="rt-big-text-v1">%</div>
-                    </div>
+                    
                     <p class="rt-text-style-h6 rt-gap-off rt-short-title-width">
-                      Faster project delivery
+                      The Experience
                     </p>
                   </div>
                   <div class="w-layout-vflex rt-card-bottom-wrapper">
@@ -2797,18 +2362,16 @@
                         loading="lazy" alt="Superme-icon" />
                     </div>
                     <p class="rt-gap-medium">
-                      “The team delivered our website ahead of schedule with
-                      clear communication and great attention to detail.”
+						“Forget courses. This is Live Deployment. You aren't a student; you are an operator integrated
+						into a Managed Unit from Day 1. We’ve purged the academic noise to make room for
+						high-velocity industrial execution and immediate ownership of the professional sprint.
+						”
                     </p>
                     <div class="w-layout-hflex rt-profile-wrapper">
-                      <div class="rt-image-wrapper">
-                        <img
-                          src="https://cdn.prod.website-files.com/691d92c72b801c04cbc08bec/6927e8835dbfa2b10c30e62b_vertora-reviewer-image.webp"
-                          loading="lazy" alt="Superme-reviewer-image" />
-                      </div>
+                     
                       <div class="w-layout-vflex">
-                        <div class="rt-text-style-h6">Flossie Gruz</div>
-                        <div>Product Manager</div>
+                        <div class="rt-text-style-h6">---------</div>
+                        <div></div>
                       </div>
                     </div>
                   </div>
@@ -2836,21 +2399,11 @@
                           loading="lazy" alt="Superme-icon" />
                       </div>
                       <p class="rt-gap-off">
-                        “They quickly understood our vision and turned it into
-                        a strong digital experience.”
+                        “We don't place individuals; we deploy units. Our infrastructure organizes high-precision
+talent into specialized engines designed to solve specific industrial gaps.”
                       </p>
                     </div>
-                    <div class="w-layout-hflex rt-profile-wrapper">
-                      <div class="rt-image-wrapper">
-                        <img
-                          src="https://cdn.prod.website-files.com/691d92c72b801c04cbc08bec/694a85a0cc2c8a513fd02695_vertora-profile-image-two.webp"
-                          loading="lazy" alt="Superme-profile-image-two" />
-                      </div>
-                      <div class="w-layout-vflex">
-                        <div class="rt-text-style-h6">Aggy Galkin</div>
-                        <div>Marketing Lead</div>
-                      </div>
-                    </div>
+         
                   </div>
                 </div>
                 <div id="w-node-d53f7f4a-07ee-5349-0e0c-f1c699f3097c-a7c4dce9"
@@ -2876,25 +2429,11 @@
                           loading="lazy" alt="Superme-icon" />
                       </div>
                       <p class="rt-gap-off rt-text-color-light-gray">
-                        “A seamless process with a polished, fast and
-                        easy-to-manage result.”
+                        "We bridge the unorganized. From retail roll-ups to smart logistics, we build the rails that connect
+elite talent to the most critical sectors of the new economy.”
                       </p>
                     </div>
-                    <div class="w-layout-hflex rt-profile-wrapper">
-                      <div class="rt-image-wrapper">
-                        <img
-                          src="https://cdn.prod.website-files.com/691d92c72b801c04cbc08bec/694a85a02d14038185b0711b_vertora-profile-image-three.webp"
-                          loading="lazy" alt="Superme-profile-image-three" />
-                      </div>
-                      <div class="w-layout-vflex">
-                        <div class="rt-text-style-h6 rt-text-color-white">
-                          Davis Bergson
-                        </div>
-                        <div class="rt-text-color-light-gray">
-                          Creative Director
-                        </div>
-                      </div>
-                    </div>
+                    
                   </div>
                 </div>
               </div>
@@ -2913,102 +2452,8 @@
                   " class="w-layout-vflex rt-review-v1-right-wrapper rt-radius-medium">
                 <div class="w-layout-vflex rt-card-content">
                   <div class="w-layout-vflex rt-client-satisfaction-rate">
-                    <div data-w-id="b92ccaee-253c-08ff-208f-2a036ce1c41f"
-                      class="w-layout-hflex rt-counter-box-v1 rt-overflow-hidden">
-                      <div class="w-layout-vflex rt-counter-train-wrap">
-                        <div style="
-                              -webkit-transform: translate3d(0, 0%, 0)
-                                scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                rotateZ(0) skew(0, 0);
-                              -moz-transform: translate3d(0, 0%, 0)
-                                scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                rotateZ(0) skew(0, 0);
-                              -ms-transform: translate3d(0, 0%, 0)
-                                scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                rotateZ(0) skew(0, 0);
-                              transform: translate3d(0, 0%, 0) scale3d(1, 1, 1)
-                                rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                            " class="w-layout-vflex rt-counter-train">
-                          <div class="rt-big-text-v1">0</div>
-                          <div class="rt-big-text-v1">1</div>
-                          <div class="rt-big-text-v1">2</div>
-                          <div class="rt-big-text-v1">7</div>
-                          <div class="rt-big-text-v1">8</div>
-                        </div>
-                        <div style="
-                              -webkit-transform: translate3d(0, 0%, 0)
-                                scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                rotateZ(0) skew(0, 0);
-                              -moz-transform: translate3d(0, 0%, 0)
-                                scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                rotateZ(0) skew(0, 0);
-                              -ms-transform: translate3d(0, 0%, 0)
-                                scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                rotateZ(0) skew(0, 0);
-                              transform: translate3d(0, 0%, 0) scale3d(1, 1, 1)
-                                rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                            " class="w-layout-vflex rt-counter-train">
-                          <div class="rt-big-text-v1">9</div>
-                          <div class="rt-big-text-v1">1</div>
-                          <div class="rt-big-text-v1">2</div>
-                          <div class="rt-big-text-v1">3</div>
-                          <div class="rt-big-text-v1">4</div>
-                        </div>
-                      </div>
-                      <div class="w-layout-vflex rt-counter-train-wrap">
-                        <div style="
-                              -webkit-transform: translate3d(0, 0%, 0)
-                                scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                rotateZ(0) skew(0, 0);
-                              -moz-transform: translate3d(0, 0%, 0)
-                                scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                rotateZ(0) skew(0, 0);
-                              -ms-transform: translate3d(0, 0%, 0)
-                                scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                rotateZ(0) skew(0, 0);
-                              transform: translate3d(0, 0%, 0) scale3d(1, 1, 1)
-                                rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                            " class="w-layout-vflex rt-counter-train">
-                          <div class="rt-big-text-v1">0</div>
-                          <div class="rt-big-text-v1">1</div>
-                          <div class="rt-big-text-v1">2</div>
-                          <div class="rt-big-text-v1">3</div>
-                          <div class="rt-big-text-v1">4</div>
-                          <div class="rt-big-text-v1">5</div>
-                          <div class="rt-big-text-v1">6</div>
-                          <div class="rt-big-text-v1">6</div>
-                          <div class="rt-big-text-v1">7</div>
-                          <div class="rt-big-text-v1">8</div>
-                        </div>
-                        <div style="
-                              -webkit-transform: translate3d(0, 0%, 0)
-                                scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                rotateZ(0) skew(0, 0);
-                              -moz-transform: translate3d(0, 0%, 0)
-                                scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                rotateZ(0) skew(0, 0);
-                              -ms-transform: translate3d(0, 0%, 0)
-                                scale3d(1, 1, 1) rotateX(0) rotateY(0)
-                                rotateZ(0) skew(0, 0);
-                              transform: translate3d(0, 0%, 0) scale3d(1, 1, 1)
-                                rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                            " class="w-layout-vflex rt-counter-train">
-                          <div class="rt-big-text-v1">9</div>
-                          <div class="rt-big-text-v1">1</div>
-                          <div class="rt-big-text-v1">2</div>
-                          <div class="rt-big-text-v1">3</div>
-                          <div class="rt-big-text-v1">4</div>
-                          <div class="rt-big-text-v1">5</div>
-                          <div class="rt-big-text-v1">6</div>
-                          <div class="rt-big-text-v1">7</div>
-                          <div class="rt-big-text-v1">8</div>
-                          <div class="rt-big-text-v1">9</div>
-                        </div>
-                      </div>
-                      <div class="rt-big-text-v1">%</div>
-                    </div>
                     <div class="rt-text-style-h6">
-                      Client satisfaction rate
+                    The Outcome 
                     </div>
                   </div>
                   <div class="w-layout-vflex rt-card-bottom-wrapper">
@@ -3017,22 +2462,11 @@
                         src="https://cdn.prod.website-files.com/691d92c72b801c04cbc08bec/6927e7dc35cf1f6febbc3902_Group%201597885185.svg"
                         loading="lazy" alt="Superme-icon" />
                     </div>
-                    <p class="rt-gap-medium">
-                      “From strategy to launch, everything felt seamless. The
-                      design, performance and overall experience exceeded our
-                      expectations and goals.”
-                    </p>
-                    <div class="w-layout-hflex rt-profile-wrapper">
-                      <div class="rt-image-wrapper">
-                        <img
-                          src="https://cdn.prod.website-files.com/691d92c72b801c04cbc08bec/694a85a044921d0168148f1e_vertora-profile-image-one.webp"
-                          loading="lazy" alt="Superme-profile-image-one" />
-                      </div>
-                      <div class="w-layout-vflex">
-                        <div class="rt-text-style-h6">Lincoln Dias</div>
-                        <div>Founder &amp; CEO</div>
-                      </div>
-                    </div>
+					<p class="rt-gap-medium">
+					“Super Me doesn't just train people; it builds the engines that run companies. We now have a
+					validated ledger of talent ready to lead any domain.”
+					</p>
+                    
                   </div>
                 </div>
                 <div class="rt-radius-small rt-overflow-hidden rt-card-client-image">
@@ -3138,7 +2572,7 @@
                 " class="rt-faq-item">
               <div class="w-layout-hflex rt-faq-v1-text">
                 <div class="rt-text-style-h5">
-                  Do you provide revisions and updates?
+                  How we redefine the Student Journey
                 </div>
                 <div class="w-layout-hflex rt-arrow-wrapper-v1 rt-radius-small">
                   <div class="rt-faq-icon-v1 rt-active"></div>
@@ -3156,9 +2590,10 @@
               </div>
               <div class="rt-faq-v1-content rt-overflow-hidden">
                 <p>
-                  We provide clear revisions during the project to ensure
-                  everything meets your expectations. Updates are handled
-                  smoothly to maintain quality and consistency.
+                  We move students from theory to Orbits(The Sandbox). Instead of waiting for a
+degree, we help you find your orbit and deploy you into managed units. You don't
+graduate with a resume; you graduate with a Validated impact and industrial proof.
+
                 </p>
               </div>
             </div>
@@ -3176,7 +2611,7 @@
                 " class="rt-faq-item">
               <div class="w-layout-hflex rt-faq-v1-text">
                 <div class="rt-text-style-h5">
-                  Is my project information confidential?
+                  How we elevate the Working Professional
                 </div>
                 <div class="w-layout-hflex rt-arrow-wrapper-v1 rt-radius-small">
                   <div class="rt-faq-icon-v1"></div>
@@ -3194,9 +2629,10 @@
               </div>
               <div class="rt-faq-v1-content rt-overflow-hidden">
                 <p>
-                  All project details are handled with strict confidentiality.
-                  We ensure your data, ideas and materials remain secure
-                  throughout the entire collaboration.
+                 For the career professional, we facilitate Orbital Ascension. We identify your
+execution plateaus and provide the strategic rails to move from 'doing' to
+'designing.' We help you jump from the Kinetic state to the Radiant state of
+leadership.
                 </p>
               </div>
             </div>
@@ -3214,7 +2650,7 @@
                 " class="rt-faq-item">
               <div class="w-layout-hflex rt-faq-v1-text">
                 <div class="rt-text-style-h5">
-                  Do you handle full brand identity projects?
+                How we architect the Unorganized Sector
                 </div>
                 <div class="w-layout-hflex rt-arrow-wrapper-v1 rt-radius-small">
                   <div class="rt-faq-icon-v1"></div>
@@ -3232,9 +2668,10 @@
               </div>
               <div class="rt-faq-v1-content rt-overflow-hidden">
                 <p>
-                  Yes, we manage complete brand identity projects, including
-                  strategy, visual design and guidelines to ensure a
-                  consistent and unified brand presence.
+                  We bridge the industrial gap. By deploying high-precision Managed Units into
+fragmented sectors like local retail or regional logistics we replace chaos with
+system architecture. We turn unorganized labor into a professionalized, scalable
+economic force.
                 </p>
               </div>
             </div>
@@ -3252,7 +2689,7 @@
                 " class="rt-faq-item">
               <div class="w-layout-hflex rt-faq-v1-text">
                 <div class="rt-text-style-h5">
-                  How do i get started with your team?
+                  How do I find the Super in me?
                 </div>
                 <div class="w-layout-hflex rt-arrow-wrapper-v1 rt-radius-small">
                   <div class="rt-faq-icon-v1"></div>
@@ -3270,9 +2707,13 @@
               </div>
               <div class="rt-faq-v1-content rt-overflow-hidden">
                 <p>
-                  You can get started by contacting our team to discuss your
-                  goals. We’ll guide you through the process and outline the
-                  next steps clearly.
+                 You don't find it by thinking; you find it by calibrating. It begins with our
+Frequency Mapping protocol a deep audit that strips away the 'static' of who
+you were told to be. Once your core signal is identified, we place you in a
+Live Deployment in an orbit ,where your natural strengths are forged into
+industrial grade mastery. The 'Super' isn't a dream; it’s your validated
+output."
+
                 </p>
               </div>
             </div>
@@ -3290,7 +2731,8 @@
                 " class="rt-faq-item rt-last-item">
               <div class="w-layout-hflex rt-faq-v1-text">
                 <div class="rt-text-style-h5">
-                  What services do you offer clients?
+                  How to join Super me !
+
                 </div>
                 <div class="w-layout-hflex rt-arrow-wrapper-v1 rt-radius-small">
                   <div class="rt-faq-icon-v1"></div>
@@ -3307,11 +2749,16 @@
                 </div>
               </div>
               <div class="rt-faq-v1-content rt-overflow-hidden">
-                <p>
-                  We offer a full range of services including design,
-                  development and branding, tailored to meet your business
-                  goals and project needs.
-                </p>
+             <p>
+  Just fill the form, we will get back to you ASAP! <br><br>
+
+  <a href="https://api.whatsapp.com/send?phone=919778250828&text=Hey%2C%20I%E2%80%99m%20ready%20to%20stop%20drifting%20and%20get%20into%20my%20orbit.%20Help%20me%20find%20the%20Super%20in%20me."
+     target="_blank"
+     class="whatsapp-btn">
+     
+     <i class="fab fa-whatsapp"></i> Connect with Us
+  </a>
+</p>
               </div>
             </div>
           </div>
@@ -3428,52 +2875,31 @@
                 </div>
               </div>
             </div>
-            <div class="w-layout-vflex rt-footer-v1-links-box rt-link-box-one">
-              <div class="rt-text-style-h6">Quick links</div>
-              <div class="w-layout-vflex rt-footer-links">
-                <a href="/" aria-current="page" class="rt-footer-link-v1 w--current">Home</a><a href="/about"
-                  class="rt-footer-link-v1">About</a><a href="/pricing" class="rt-footer-link-v1">Pricing</a><a
-                  href="/blog-one" class="rt-footer-link-v1">Blog</a><a href="/contact-one"
-                  class="rt-footer-link-v1">Contact</a>
-              </div>
-            </div>
+
             <div class="w-layout-vflex rt-footer-v1-links-box">
-              <div class="rt-text-style-h6">Utility pages</div>
+              <div class="rt-text-style-h6">Quick pages</div>
               <div class="w-layout-vflex rt-footer-links">
-                <a href="/license" class="rt-footer-link-v1">License</a><a href="/style-guide"
-                  class="rt-footer-link-v1">Style guide</a><a href="/changelog"
-                  class="rt-footer-link-v1">Changelog</a><a href="https://vertora.webflow.io/401"
-                  class="rt-footer-link-v1">Password protected</a><a href="https://vertora.webflow.io/404"
-                  class="rt-footer-link-v1">404</a>
+                <a href="#" aria-current="page" class="rt-footer-link-v1 w--current">Home</a><a href="#about"
+                  class="rt-footer-link-v1">About</a><a href="#"
+                  class="rt-footer-link-v1">Contact</a>
               </div>
             </div>
             <div id="w-node-_37b30dad-1d36-201d-52eb-7bfb3981419a-3981415f" class="w-layout-vflex rt-footer-v1-right">
               <div class="w-layout-vflex rt-footer-v1-right-wraps">
                 <div class="rt-text-style-h6">Address</div>
-                <div>410 Sandtown, California 94001, USA</div>
+                <div>Hilite Business Park ,Calicut ,India</div>
               </div>
               <div class="w-layout-vflex rt-footer-v1-right-wraps">
                 <div class="rt-text-style-h6">Contact</div>
                 <div class="w-layout-vflex rt-footer-links">
-                  <a href="tel:8884567890" class="rt-footer-link-v1">(888) 456 7890</a><a href="mailto:info@example.com"
-                    class="rt-footer-link-v1">info@example.com</a>
+                  <a href="tel:+919778250828" class="rt-footer-link-v1">+919778250828</a><a href="mailto:info@supermelabs.com ">info@supermelabs.com </a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="w-layout-hflex rt-footer-v1-bottom">
-            <div>
-              Designed by<a href="https://www.radianttemplates.com/" target="_blank" class="rt-footer-link-v1">
-                Radiant Templates</a>.
-            </div>
-            <div>
-              Powered by
-              <a href="https://webflow.com/" target="_blank" class="rt-footer-link-v1">Webflow</a>.
-            </div>
-          </div>
           <div class="w-layout-hflex rt-footer-v1-top">
             <a href="/" aria-current="page" class="link-block w-inline-block w--current">
-              <div class="rt-big-text-v5">Superme</div>
+              <div class="rt-big-text-v5">Super me!</div>
             </a>
             <div class="w-layout-hflex rt-footer-social-icons-wrap">
               <a data-w-id="37b30dad-1d36-201d-52eb-7bfb398141b8" href="https://www.facebook.com/" target="_blank"
